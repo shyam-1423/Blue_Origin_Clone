@@ -1,0 +1,249 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Custom Variables */
+:root {
+  --color-white: #ffffff;
+  --color-brand: #004080; /* Example brand color, adjust as needed */
+  --spacing7: 2rem;
+  --max-width-large: 1200px;
+}
+body{
+  font-family: "Poppins", sans-serif;
+
+}
+/* Section Styles */
+.section {
+  height: 70vh;
+  background-image: url(https://d1o72l87sylvqg.cloudfront.net/blue-origin/latest-news_hero.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-position: 100%; */
+  background-color: var(--color-brand);
+  color: var(--color-white);
+  padding: var(--spacing7) 0;
+  text-align: center;
+}
+
+.section span {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 70px;
+  font-weight: 600;
+  padding-top: 20%;
+  padding-left: 30%;
+  text-transform: uppercase;
+}
+#News_text{
+  width: 100%;
+  padding-top: 15%;
+}
+.section .img-fluid {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .section {
+    text-align: left;
+  }
+  .section h1 {
+    font-size: 3rem;
+  }
+}
+
+.bg-brand {
+  background-color: var(--color-brand) !important;
+}
+/* Custom Variables */
+:root {
+  --color-gray925: #6c757d; /* Example gray color, adjust as needed */
+  --color-brand: #004080; /* Example brand color, adjust as needed */
+}
+
+/* Card Styles */
+.card {
+  height: 65vh;
+  width: 450px;
+  border: 1px solid #494949;
+  border-radius: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0033cc;
+    transition: all 0.11s ease-in-out;
+}
+.card:hover::before {
+    top: 98%;
+}
+.imageNews{
+  height: 34vh;
+  width: 450px;
+}
+.card img {
+  height: 34vh;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+#cardtextH1{
+  font-size: 23px;
+  color: #0003ce;
+  text-align: justify;
+  font-weight: 700;
+  text-decoration: none;
+}
+#cardtextprg{
+  font-size: 18px;
+  color: #000;
+  word-spacing: 4px;
+  text-align: justify;
+  padding-top: 10px;
+  font-weight: 400;
+}
+.badge{
+  position: absolute;
+  bottom: 92%;
+  left: 5%;
+  font-size: 16px;
+  font-weight:400 ;
+  background-color: #fff;
+  color: #0003ce;
+  border: 1px solid #313131;
+  border-radius: 0;
+  transition: all 0.5s ease-in-out;
+  &:hover{
+    background-color: #0033cc;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+#newsText{
+  font-size: 17px;
+}
+/* Responsive Design */
+@media (min-width: 992px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+.news-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+#news{
+padding: 10%;
+z-index: 0;
+}
+.horizontal-line {
+    width: 25px;
+    height: 4px;
+    background-color: #0033cc;
+    margin: 12px 0;
+}
+.SMPbtn{
+    display: flex;
+    justify-content: center;
+}
+.ShowMorePost{
+    height: 50px;
+    width: 200px;
+    background-color: #0033cc;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    transition: background .5s ease-in-out,color .5s ease-in-out;
+    &:hover{
+        background-color: transparent;
+        color: #0033cc;
+        border: 1px solid #494949;
+    }
+}
+.InquiriesBtn{
+    margin-top: 5%;
+}
+.BtnInquiries{
+    height: 50px;
+    width: 250px;
+    background-color:transparent;
+    color: #0033cc;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid #0033cc;
+    transition: background .5s ease-in-out,color .5s ease-in-out;
+    &:hover{
+        background-color: transparent;
+        color: #0033cc;
+        border: 1px solid #494949;
+    }
+}
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .card {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 0px; /* Rounded corners */
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Ensuring badge and text alignment for mobile */
+  .badge {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .horizontal-line {
+    width: 30px; /* Shorter horizontal line */
+    height: 2px;
+  }
+
+  .imageNews img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures image scales properly */
+    border-radius: 0;
+  }
+
+  /* Adjust text sizes for readability on smaller screens */
+  #newsText {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #cardtextH1 {
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  #cardtextprg {
+    font-size: 0.9rem;
+    color: #333;
+  }
+}
+

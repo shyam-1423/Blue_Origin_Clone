@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/Engines/Blue_Origin_Feather.svg.png">
+    <title>Engines | Blue Origin</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="CSS/Engines/Engines.css">
+    <link rel="stylesheet" href="CSS/Home/Footer.css">
+    <link rel="stylesheet" href="CSS/BackToTop.css">
+</head>
+<body>
+    <main>
+        <section class="container-fluid" id="first_section">
+            <header id="header" class="Header navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <h1 class="HeaderLogo">
+                    <a id="header-logo" aria-current="page" href="index.html">
+                      <img alt="Blue Origin: For The Benefit of Earth" src="Images/Home/logo-blue-origin-.svg" width="189" height="48">
+                    </a>
+                  </h1>
+                  <!-- Navigation -->
+                  <nav aria-label="Featured" class="HeaderNavigation navbar-nav ms-auto" id="HeaderNavigation">
+                    <ul class="HeaderNavigationList navbar-nav" id="HeaderNavigationList">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="vehiclesDropdown vehiclesDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vehicles</a>
+                        <ul class="dropdown-menu" aria-labelledby="vehiclesDropdown" id="VehichleDropdown">
+                          <li><a class="dropdown-item" href="#" id="dropdown_Item">New Shepard</a></li>
+                          <li><a class="dropdown-item" href="#" id="dropdown_Item">New Glenn</a></li>
+                          <li><a class="dropdown-item" href="#" id="dropdown_Item">Blue Moon</a></li>
+                          <li><a class="dropdown-item" href="#" id="dropdown_Item">Blue Ring</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="Engines.html">Engines</a></li>
+                      <li class="nav-item"><a class="nav-link" href="Destinations.html">Destinations</a></li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown" id="AboutDropdown">
+                          <li><a class="dropdown-item" href="AboutBlue.html" id="dropdown_Item">About Blue</a></li>
+                          <li><a class="dropdown-item" href="#" id="dropdown_Item">Sustainability</a></li>
+                          <li><a class="dropdown-item" href="News.html" id="dropdown_Item">News</a></li>
+                          <li><a class="dropdown-item" href="#" id="dropdown_Item">Gallery</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" aria-expanded="false"><i class="fa-solid fa-language fa-2xl" style="color: #ffffff;"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown" id="LanguageDropdown">
+                            <li><a class="dropdown-item" href="#" id="dropdown_Item">English</a></li>
+                            <li><a class="dropdown-item" href="#" id="dropdown_Item">Español</a></li>
+                            <li><a class="dropdown-item" href="#" id="dropdown_Item">عربي</a></li>
+                            <li><a class="dropdown-item" href="#" id="dropdown_Item">Français</a></li>
+                            <li><a class="dropdown-item" href="#" id="dropdown_Item">Chinese中国人</a></li>
+                            <li><a class="dropdown-item" href="#" id="dropdown_Item">Português</a></li>
+                            <li><a class="dropdown-item" href="#" id="dropdown_Item">邦人</a></li>
+                            <li><a class="dropdown-item" href="#" id="dropdown_Item">عربي</a></li>
+                        </ul>
+                      </li>
+                      <a href="#" id="FLT_btn" class="fs-5 ms-4">Fly To Space</a>
+                    </ul>
+                   
+                    <!-- Offcanvas Toggle Button -->
+                    <button class="HeaderSideNavigationTrigger btn  d-lg-block ms-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false">
+                      <div class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                      </div>
+                      <span class="visually-hidden">Fly to Space</span>
+                    </button>
+                  </nav>
+                </div>
+              </header>
+              <!-- Offcanvas Menu -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel" >
+                <div class="offcanvas-header">
+                  <span class="HeaderSideNavigationLogo">
+                    <a id="side-nav-logo" aria-current="page" href="index.html">
+                      <img alt="Blue Origin Home" src="https://d1o72l87sylvqg.cloudfront.net/blue-origin/logo-feather-optimized.svg" width="126" height="64">
+                    </a>
+                  </span>
+                  <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close" id="FlyToSpace">
+                    <div class="close-icon">
+                      <div class="line line-1"></div>
+                      <div class="line line-2"></div>
+                    </div>
+                  </button>
+                </div>
+                <div class="offcanvas-body">
+                  <nav aria-label="Main" class="HeaderSideNavigationListPrimary">
+                    <ul class="HeaderSideNavigationList list-unstyled">
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="#">New Shepard</a></li>
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="#">New Glenn</a></li>
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="#">Blue Moon</a></li>
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="#">Blue Ring</a></li>
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="Engines.html">Engines</a></li>
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="Destinations.html">Destinations</a></li>
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="AboutBlue.html">About Blue</a></li>
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="#">Sustainability</a></li>
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="News.html">News</a></li>
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="#">Gallery</a></li>
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="#">Careers</a></li>
+                      <li><a class="dropdown-item text-light fs-4 p-2" href="#">Shop</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </header>
+            <div class="container-fluid" id="first_section_content"  data-aos="fade-up">
+                <div class="d-flex align-items-center" id="first_section_content_text">
+                    <div class="horizontal-line me-3"></div> <!-- blue horizontal line -->
+                    <span  class="fs-3 fs-md-4 fs-lg-5 fs-xl-6 text-light fw-light">BLUE ENGINES</span>
+                </div>
+                <div id="first_section_content_text1">
+                    <span class="fs-3 fs-md-4 fs-lg-4 fs-xl-5 text-light">Rocket Engines</span>
+                </div>
+                <div id="first_section_content_text1">
+                    <span class="fs-3 fs-md-4 fs-lg-4 fs-xl-5 text-light">Designed for</span>
+                </div>
+                <div id="first_section_content_text1">
+                    <span class="fs-3 fs-md-4 fs-lg-5 fs-xl-5 text-light">Reuse</span>
+                </div>
+                <div class="container" data-aos="fade-down">
+                  <div class="hero-content__main">
+                      <div class="hero-buttons horizontal-btns animate justify-content-start animated">
+                          <div class="video-btn-wrapper">
+                              <button class="video-btn" id="modal__trigger">
+                                <div>
+                                  <a href="https://youtu.be/1YOL89kY8Og" target="_self" class="video-btn-play-bg"><i class="fa-solid fa-play fa-xl pt-4" style="color: #000;"></i></a>
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" class="play-btn-svg" role="img">
+                                      <use xlink:href="/img/icon-play.svg#icon"></use>
+                                      <title>Play video</title>
+                                  </svg>
+                              </div>
+                                  <div>
+                                      <span class="video-btn-text fw-bolder">Watch BE-4 Hotfires</span>
+                                  </div>
+                              </button>
+              
+                              <!-- Modal -->
+                              <!-- <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" id="modal_dialog">
+                                      <div class="modal-content" id="modal_content">
+                                          <div class="modal-header">
+                                              <h5 class="modal-title" id="modalLabel">Blue Origin</h5>
+                                              <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                              <div class="embed-container">
+                                                  <iframe id="videoFrame" src="" allowfullscreen></iframe>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div> -->
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid" id="second_section">
+            <div class="container second_section_content">
+              <div id="second_section_content_text"  data-aos="fade-down">
+                <h1 class="fs-2 fs-sm-4 fs-md-3 text-center p-4">BLUE ENGINES</h1>
+              </div>
+              <div id="second_section_content_text1"  data-aos="fade-up">
+                <h1 class="fs-1 fs-sm-3 fs-md-2 text-center p-1" style="color: #0033cc;">Our Approach to Engines</h1>
+              </div>
+              <div class="container d-flex" id="second_section_content_text2"  data-aos="fade-down">
+                <p class="w-100  text-center fw-light">Operationally reusable rockets demand high performance engines capable of deep throttling for soft landings. Built for multiple uses, our family of engines is powering the next generation of rockets for commercial, civil, national security and human spaceflight.</p>
+              </div>
+              <div class="container" id="second_section_content_text3"  data-aos="fade-up">
+                <p class="w-100 text-center fw-light">Blue Engines are designed, developed and manufactured at our headquarters in Kent, Washington. We're now preparing for serial production of our most powerful engine, the BE-4, in Huntsville, Alabama. All our engines and propulsion subsystems are thoroughly tested and qualified in Van Horn, Texas.</p>
+              </div>
+            </div>
+        </section>
+        <section class="container-fluid w-100 h-100 d-flex justify-content-center" id="third_section">
+          <div class="container">
+              <!-- First Row -->
+              <div class="row align-items-center text-center text-md-start mb-5">
+                  <!-- Image Column -->
+                  <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center mb-4 mb-md-0">
+                      <img src="Images/Engines/BlueOrigin_NewShepard_BoosterLandingAlternate3.jpg" class="img-fluid" alt="BE-3 Image"  data-aos="zoom-in-up">
+                  </div>
+                  <!-- Text Column -->
+                  <div class="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center align-items-center align-items-md-start ps-md-4" data-aos="zoom-in-down">
+                      <div class="d-flex align-items-center mb-3">
+                          <div class="horizontal-line me-2" ></div> <!-- blue horizontal line -->
+                          <span class="fs-4 fs-md-4 fs-lg-5 fs-xl-6 text-dark fw-light">BLUE ENGINES</span>
+                      </div>
+                      <h1 class="mb-3">BE-3</h1>
+                      <p class="fs-5 fs-md-4 fs-lg-5 fs-xl-6 text-dark fw-light">The BE-3 is the first new liquid hydrogen-fueled rocket engine to be developed for production in America in over a decade.</p>
+                      <a href="#" class="text-light text-decoration-none d-inline-flex align-items-center" id="third_section_content_BE-3_btn1">
+                          Explore BE-3
+                      </a>
+                  </div>
+              </div>
+      
+              <!-- Second Row -->
+              <div class="row align-items-center text-center text-md-start">
+                <!-- Image Column -->
+                <div class="col-12 col-md-6 d-flex justify-content-center order-1 order-md-2"  data-aos="zoom-in-up">
+                    <img src="Images/Engines/BlueOrigin_BE4_EngineLineup.jpg" class="img-fluid" alt="BE-4 Image">
+                </div>
+                <!-- Text Column -->
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start ps-md-4 mb-4 mb-md-0 order-2 order-md-1" data-aos="zoom-in-down">
+                    <div class="d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                        <div class="horizontal-line me-2"></div> <!-- blue horizontal line -->
+                        <span class="fs-4 fs-md-4 fs-lg-5 fs-xl-6 text-dark fw-light">BLUE ENGINES</span>
+                    </div>
+                    <h1 class="mb-3 text-center text-md-start d-lg-none">BE-4</h1>
+                    <h1 class="d-none d-md-block mb-3">BE-4</h1> <!-- Hidden on mobile, visible on desktop -->
+                    <p class="fs-5 fs-md-4 fs-lg-5 fs-xl-6 text-dark fw-light">The first ox-rich staged combustion engine made in the U.S. will power the next generation of American orbital rockets.</p>
+                    <a href="#" class="text-light text-decoration-none d-inline-flex align-items-center" id="third_section_content_BE-3_btn1">
+                        Explore BE-4
+                    </a>
+                </div>
+            </div>                    
+               <!-- Third Row -->
+              <div class="row align-items-center text-center text-md-start">
+                 <!-- Image Column -->
+                     <div class="col-12 col-md-6 d-flex justify-content-center pt-sm-5" data-aos="zoom-in-down">
+                        <img src="Images/Engines/blueorigin_be7.jpg" class="img-fluid" alt="BE-4 Image">
+                      </div>
+                <!-- Text Column -->
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start ps-md-4 mb-4 mb-md-0"  data-aos="zoom-in-up">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="horizontal-line me-2"></div> <!-- blue horizontal line -->
+                        <span class="fs-4 fs-md-4 fs-lg-5 fs-xl-6 text-dark fw-light">BLUE ENGINES</span>
+                    </div>
+                    <h1 class="mb-3">BE-7</h1>
+                    <p class="fs-5 fs-md-4 fs-lg-5 fs-xl-6 text-dark fw-light">BE-7 is an additively manufactured, high-performance, dual-expander cycle engine, generating 10,000 lbf (44.5 kN) thrust.</p>
+                    <a href="#" class="text-light text-decoration-none d-inline-flex align-items-center" id="third_section_content_BE-3_btn1">
+                        Explore BE-7
+                    </a>
+                </div>
+            </div>
+          </div>
+      </section>
+      <section class="container-fluid mt-5" id="fourth_section">
+        <div  class="container-fluid d-flex justify-content-center" id="fourth_section_content">
+          <div class="d-flex align-items-center mb-3">
+            <div class="horizontal-line me-2"></div> <!-- blue horizontal line -->
+            <span class="fs-4 fs-md-4 fs-lg-5 fs-xl-6 text-dark fw-light">BLUE ENGINES</span>
+          </div>
+        </div>
+        <div class=" d-flex justify-content-center" id="fourth_section_content_text">
+          <h1>Development History</h1>
+        </div>
+        <div class="container d-flex justify-content-center" id="fourth_section_content_text1">
+          <div class="container" id="fourth_section_content_part1" data-aos="fade-down">
+            <h1>Engine</h1>
+            <div class="container" id="fourth_section_content_part1_sub1">
+              <h3>BE - 1</h3>
+              <h3>BE - 2</h3>
+              <h3>BE - 3PM</h3>
+              <h3>BE - 3U</h3>
+              <h3>BE - 4</h3>
+              <h3>BE - 7</h3>
+            </div>
+          </div>
+          <div class="container" id="fourth_section_content_part2" data-aos="fade-up">
+            <h1>Propellant</h1>
+            <div class="container" id="fourth_section_content_part1_sub2">
+              <h3>Peroxide</h3>
+              <h3>Kerosene + Peroxide</h3>
+              <h3>Liquid Hydrogen + Liquid Oxygen</h3>
+              <h3>Liquid Hydrogen + Liquid Oxygen</h3>
+              <h3>Liquefied Natural Gas + Liquid Oxygen</h3>
+              <h3>Liquid Hydrogen + Liquid Oxygen</h3>
+            </div>
+          </div>
+          <div class="container" id="fourth_section_content_part3" data-aos="fade-down">
+            <h1>Thrust</h1>
+            <div class="container" id="fourth_section_content_part1_sub3">
+              <h3>2,000 lbf (9 kN) at Sea Level</h3>
+              <h3>31,000 lbf (140 kN) at Sea Level</h3>
+              <h3>110,000 lbf (490 kN) at Sea Level</h3>
+              <h3>160,000 lbf (712 kN) in Vacuum</h3>
+              <h3>550,000 lbf (2,450 kN) at Sea Level</h3>
+              <h3>10,000 lbf (44.5 kN)in Vacuum</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button id="backToTop" class="btn btn-primary rounded-circle">
+        <i class="fa-solid fa-angle-up fa-xl" style="color: #ffffff;"></i>
+    </button>
+      <footer>
+        <!-- Social Media Section -->
+        <section class="bg-brand text-white py-5 d-flex justify-content-center">
+            <div class="container text-center d-flex justify-content-center">
+                <h3>Follow Blue Origin &nbsp; | &nbsp;</h3>
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li class="mx-2 socials">
+                        <a href="https://twitter.com/blueorigin" class="text-white" aria-label="Twitter">
+                            <!-- Twitter Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="35" viewBox="0 0 50 50">
+                              <path d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"></path>
+                              </svg>
+                        </a>
+                    </li>
+                    <li class="mx-2 socials">
+                        <a href="https://www.instagram.com/blueorigin/" class="text-white" aria-label="Instagram">
+                            <!-- Instagram Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="35" viewBox="0 0 48 48">
+                              <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+                              </svg>
+                        </a>
+                    </li>
+                    <li class="mx-2  socials">
+                        <a href="https://www.youtube.com/@blueorigin" class="text-white" aria-label="YouTube">
+                            <!-- YouTube Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="35" viewBox="0 0 48 48">
+                              <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path><path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+                              </svg>
+                        </a>
+                    </li>
+                    <li class="mx-2  socials">
+                        <a href="https://www.linkedin.com/company/blue-origin" class="text-white" aria-label="LinkedIn">
+                            <!-- LinkedIn Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="35" viewBox="0 0 24 24">
+                              <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z"></path>
+                          </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Legal and Navigation Section -->
+        <section class="bg-gray950 text-gray100 py-5 d-flex justify-content-center" style="background-color: #000;">
+            <div class="container" id="footer">
+                <div class="row w-100">
+                    <!-- Logo and Copyright -->
+                    <div class="col-md-4 mb-3" id="first_ft1">
+                        <a href="index.html"><img src="https://d1o72l87sylvqg.cloudfront.net/blue-origin/logo-feather-optimized.svg" alt="Blue Origin Home" class="img-fluid" id="footerImage"></a>
+                        <p >© 2024 Blue Origin LLC</p>
+                        <nav aria-label="Legal" id="legal">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-gray100">Privacy Policy</a></li>
+                                <li><a href="#" class="text-gray100">Terms of Use</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Footer Navigation -->
+                    <div class="col-md-4 mb-3" id="first_ft2">
+                        <nav aria-label="Footer">
+                            <ul class="list-unstyled">
+                                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Careers</a></li>
+                                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Gallery</a></li>
+                                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Become an Astronaut</a></li>
+                                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Become a Supplier</a></li>
+                                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Media Inquiries</a></li>
+                                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Accessibility</a></li>
+                                <li><a href="#" class="text-gray100 text-decoration-none">Cookie Setting</a></li>
+                            </ul>
+                            <label class="mt-3 d-block" id="first_ft3" style="background-color: #000;">
+                                Font Preference
+                                <select id="andromeda-font-preference" class="form-select mt-2">
+                                    <option value="no-preference" selected>No Preference (Default)</option>
+                                    <option value="atkinson-hyperlegible">Atkinson Hyperlegible</option>
+                                    <option value="open-dyslexic">OpenDyslexic</option>
+                                </select>
+                            </label>
+                        </nav>
+                    </div>
+
+                    <!-- Subscription Form -->
+                    <div class="col-md-4 mb-3 first_ft4">
+                        <h2>Subscribe</h2>
+                        <form action="https://blueorigin.us9.list-manage.com/subscribe/post?u=ca4c14684ac1af3f1219b4382&amp;id=561fc27e50" method="POST" target="_blank">
+                            <p>Sign up to receive updates on Blue Origin's announcements, launches, and opportunities.</p>
+                            <p><abbr title="(required)">* </abbr> indicates a required field</p>
+                            <div class="mb-3">
+                                <label for="email">Email<abbr title="(required)"> *</abbr></label>
+                                <input type="email" class="form-control" id="email" name="EMAIL" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" id="consent" required>
+                                <label for="consent">Please click to confirm your consent to receive email updates from us. Note - you have the right to withdraw your consent at any time by contacting us at <a href="mailto:privacy@blueorigin.com">privacy@blueorigin.com</a> or by clicking the “unsubscribe” link in the emails we send to you. Please review our <a href="/privacy-policy" target="_blank" rel="noopener">privacy policy</a>.</label>
+                            </div>
+                            <button type="submit" class="btn btn-brand w-75">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </footer>
+    </main>
+    <script src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="aos-master/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/Engines/Engines.js"></script>
+    <script src="JS/BacktoTop.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+/* Footer */
+.bg-brand {
+    background-color: #0033cc;
+    /* Replace with the actual brand color */
+  }
+  
+  .bg-gray950 {
+    background-color: #333;
+    /* Replace with the actual gray color */
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .text-gray100 {
+    color: #f5f5f5;
+    /* Replace with the actual gray color */
+  }
+  #footerImage {
+    width: 80%;
+    padding-left: 10px;
+  }
+  li a {
+    position: relative; /* To position the pseudo-elements */
+  }
+  li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 5;
+    width: 0%; /* Initially, no underline */
+    height: 3px; /* Thickness of the underline */
+    background-color: #0033cc; /* White underline color */
+    transition: width 0.3s ease-in-out; /* Smooth transition for width change */
+  }
+  li a:hover:after {
+    width: 100%; /* On hover, extend the underline */
+    color: #fff;
+  }
+  #first_ft2{
+    border-right:2px solid #fff;
+    padding-right: 20px;
+  }
+  .first_ft4{
+    padding-left: 30px;
+  }
+  .form-select{
+    border-radius: 0;
+  }
+  #email{
+    border: none;
+    border-bottom: 4px solid #0033cc;
+    /* background-color: #000; */
+    border-radius: 0;
+  }
+#email::placeholder{
+    color: #fff;
+  }
+  .mb-3 .btn-brand{
+    background-color: #0033cc;
+    font-size: 20px
+  }
+  .mb-3 .btn-brand:hover{
+    background-color: #ffffff;
+    color: #0033cc;
+    border: 1px solid #000;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .socials{
+    transition: all .5s ease-in-out;
+    &:hover {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      padding-top: 3px;
+    }
+  }
+  
+  .btn-brand {
+    background-color: #0033cc;
+    /* Replace with the actual brand color */
+    color: #fff;
+    border-radius: 0;
+  }
+  
+  @media (min-width:320px) and (max-width:480px) {  
+    #footer {
+      padding-left: 40px;
+    }
+  
+    #legal {
+      padding-left: 10px;
+    }
+  
+    #first_ft1 {
+      width: 95%;
+      padding: 0;
+      margin: 0;
+    }
+    #first_ft2{
+      border-right:none;
+      padding-right:0;
+    }
+    #first_ft4{
+      padding-left: 0;
+    }
+    #first_ft1 p {
+      width: 80%;
+      padding-top: 10px;
+      margin: 0 0 0 10px;
+    }
+  
+    #footerImage {
+      width: 70%;
+      padding-left: 10px;
+    }
+  }

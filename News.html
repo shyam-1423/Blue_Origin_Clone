@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | Blue Origin</title>
+  <link rel="icon" href="Images/Home/og_feather_logo.jpeg">
+  <link rel="stylesheet" href="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="aos-master/dist/aos.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel="stylesheet" href="CSS/AboutBlue/News.css">
+  <link rel="stylesheet" href="CSS/Home/Home.css">
+  <link rel="stylesheet" href="CSS/Home/Footer.css">
+  <link rel="stylesheet" href="CSS/BackToTop.css">
+</head>
+
+<body>
+  <header id="header" class="Header navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <h1 class="HeaderLogo">
+        <a id="header-logo" aria-current="page" href="index.html">
+          <img alt="Blue Origin: For The Benefit of Earth" src="Images/Home/logo-blue-origin-.svg" width="189"
+            height="48">
+        </a>
+      </h1>
+      <!-- Navigation -->
+      <nav aria-label="Featured" class="HeaderNavigation navbar-nav ms-auto" id="HeaderNavigation">
+        <ul class="HeaderNavigationList navbar-nav" id="HeaderNavigationList">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="vehiclesDropdown vehiclesDropdown1" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">Vehicles</a>
+            <ul class="dropdown-menu" aria-labelledby="vehiclesDropdown" id="VehichleDropdown">
+              <li><a class="dropdown-item" href="New_Sheperd.html" id="dropdown_Item">New Shepard</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">New Glenn</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">Blue Moon</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">Blue Ring</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="Engines.html">Engines</a></li>
+          <li class="nav-item"><a class="nav-link" href="Destinations.html">Destinations</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+              aria-expanded="false">About</a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown" id="AboutDropdown">
+              <li><a class="dropdown-item" href="AboutBlue.html" id="dropdown_Item">About Blue</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">Sustainability</a></li>
+              <li><a class="dropdown-item" href="News.html" id="dropdown_Item">News</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" aria-expanded="false"><i
+                class="fa-solid fa-language fa-2xl" style="color: #ffffff;"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown" id="LanguageDropdown">
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">English</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">Español</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">عربي</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">Français</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">Chinese中国人</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">Português</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">邦人</a></li>
+              <li><a class="dropdown-item" href="#" id="dropdown_Item">عربي</a></li>
+            </ul>
+          </li>
+          <a href="#" id="FLT_btn" class="fs-5 ms-4">Fly To Space</a>
+        </ul>
+
+        <!-- Offcanvas Toggle Button -->
+        <button class="HeaderSideNavigationTrigger btn  d-lg-block ms-4" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false">
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+          </div>
+          <span class="visually-hidden">Fly to Space</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+      <span class="HeaderSideNavigationLogo">
+        <a id="side-nav-logo" aria-current="page" href="index.html">
+          <img alt="Blue Origin Home" src="https://d1o72l87sylvqg.cloudfront.net/blue-origin/logo-feather-optimized.svg"
+            width="126" height="64">
+        </a>
+      </span>
+      <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close" id="FlyToSpace">
+        <div class="close-icon">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+        </div>
+      </button>
+    </div>
+    <div class="offcanvas-body">
+      <nav aria-label="Main" class="HeaderSideNavigationListPrimary">
+        <ul class="HeaderSideNavigationList list-unstyled">
+          <li><a class="dropdown-item text-light fs-4 p-2" href="#">New Shepard</a></li>
+          <li><a class="dropdown-item text-light fs-4 p-2" href="#">New Glenn</a></li>
+          <li><a class="dropdown-item text-light fs-4 p-2" href="#">Blue Moon</a></li>
+          <li><a class="dropdown-item text-light fs-4 p-2" href="#">Blue Ring</a></li>
+          <li><a class="dropdown-item text-light fs-4 p-2" href="Engines.html">Engines</a></li>
+          <li><a class="dropdown-item text-light fs-4 p-2" href="Destinations.html">Destinations</a></li>
+          <li><a class="dropdown-item text-light fs-4 p-2" href="AboutBlue.html">About Blue</a></li>
+          <li><a class="dropdown-item text-light fs-4 p-2" href="#">Sustainability</a></li>
+          <li><a class="dropdown-item text-light fs-4 p-2" href="News.html">News</a></li>
+          <li><a class="dropdown-item text-light fs-4 p-2" href="#">Gallery</a></li>
+          <li><a class="dropdown-item text-light fs-4 p-2" href="#">Careers</a></li>
+          <li><a class="dropdown-item text-light fs-4 p-2" href="#">Shop</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+  <section id="latest-news" class="section py-5 bg-brand text-white">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-lg-0" id="News_text">
+          <span class="display-1" >The Latest from Blue</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid">
+    <!-- <li class="col-md-6 col-lg-4 mt-4 list-inline">
+      <article role="group" aria-label="Post" class="card border-0">
+        <a id="post-link" class="text-decoration-none" href="https://www.blueorigin.com/news/new-shepard-ns-26-mission">
+          <div class="position-relative overflow-hidden">
+            <img 
+              alt="Blue Origin Completes 26th Mission to Space with Six Crew Onboard" 
+              loading="lazy" 
+              decoding="async" 
+              class="img-fluid"
+              src="Images/AboutBlue/BoosterLanding_Hero_NS21 1.webp"
+            />
+            <div class="date start-0 text-dark p-2">
+              Aug 29, 2024
+            </div>
+          </div>
+          <div class="p-3">
+            <div class="mb-2">
+              <span class="badge text-bg-brand">News</span>
+            </div>
+            <h2 class="card-title">Blue Origin Completes 26th Mission to Space with Six Crew Onboard</h2>
+            <p class="card-text">Today, Blue Origin successfully completed its eighth human spaceflight and the 26th flight for the New Shepard program.</p>
+          </div>
+        </a>
+      </article>
+    </li> -->
+    <div class="container-fluid mt-5" id="news">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+          <div class="card h-100 ">
+            <div class="imageNews">
+              <img src="Images/AboutBlue/BoosterLanding_Hero_NS21 1.webp" class="card-img-top img-fluid"
+                alt="Blue Origin Spacecraft Landing">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                <div class="date badge">AUG 29, 2024</div>
+                <br>
+                <div class="horizontal d-flex">
+                  <div class="horizontal-line me-1"></div>
+                  <div class="fw-bold pt-1" id="newsText">NEWS</div>
+                </div>
+              </h5>
+              <a class="card-text" id="cardtextH1" href="https://www.blueorigin.com/news/new-shepard-ns-26-mission">Blue
+                Origin Completes 26th Mission to Space with Six Crew Onboard</a>
+              <p class="card-text" id="cardtextprg">Today, Blue Origin successfully completed its eighth human
+                spaceflight and the 26th flight for the New Shepard program.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+          <div class="card h-100">
+            <img src="Images/AboutBlue/ns25-training-day-2-crew_gallery.jpg" class="card-img-top img-fluid"
+              alt="Blue Origin Spacecraft Landing">
+            <div class="card-body">
+              <h5 class="card-title">
+                <div class="date badge">MAY 19, 2024</div>
+                <br>
+                <div class="horizontal d-flex">
+                  <div class="horizontal-line me-1"></div>
+                  <div class="fw-bold pt-1" id="newsText">NEWS</div>
+                </div>
+              </h5>
+              <a class="card-text" id="cardtextH1" href="https://www.blueorigin.com/news/ns-25-mission-updates">Blue
+                Origin Completes 25th Mission to Space with Six Crew Onboard</a>
+              <p class="card-text" id="cardtextprg">Today, Blue Origin successfully completed its eighth human
+                spaceflight and the 25th flight for the New Shepard program.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+          <div class="card h-100">
+            <img src="Images/AboutBlue/new-shepard-launchpad-sunrise.webp" class="card-img-top img-fluid"
+              alt="Blue Origin Spacecraft Landing">
+            <div class="card-body">
+              <h5 class="card-title">
+                <div class="date badge">MAY 14, 2024</div>
+                <br>
+                <div class="horizontal d-flex">
+                  <div class="horizontal-line me-1"></div>
+                  <div class="fw-bold pt-1" id="newsText">NEWS</div>
+                </div>
+              </h5>
+              <a class="card-text" id="cardtextH1"
+                href="https://www.blueorigin.com/news/new-shepard-ns-25-mission-announcement">New Shepard's Crewed NS-25
+                Mission Targets Liftoff on May 19</a>
+              <p class="card-text" id="cardtextprg">Blue Origin announced today its seventh human flight, NS-25, will
+                lift off from Launch Site One in West Texas on Sunday, May 19.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+          <div class="card h-100">
+            <div class="imageNews">
+              <img src="Images/AboutBlue/bluering01.webp" class="card-img-top img-fluid" alt="Blue Origin Spacecraft Landing">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                <div class="date badge">MAR 19, 2024</div>
+                <br>
+                <div class="horizontal d-flex">
+                  <div class="horizontal-line me-1"></div>
+                  <div class="fw-bold pt-1" id="newsText">NEWS</div>
+                </div>
+              </h5>
+              <a class="card-text" id="cardtextH1" href="https://www.blueorigin.com/news/new-shepard-ns-26-mission">Blue Origin’s Blue Ring to Demonstrate Operation Capabilities on DarkSky-1 Mission</a>
+              <p class="card-text" id="cardtextprg">Blue Origin will demonstrate Blue Ring's operation capabilities and core flight systems on upcoming sponsored launch</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+          <div class="card h-100">
+            <img src="Images/AboutBlue/itt_night_news-hero.webp" class="card-img-top img-fluid" alt="Blue Origin Spacecraft Landing">
+            <div class="card-body">
+              <h5 class="card-title">
+                <div class="date badge">FEB 21, 2024</div>
+                <br>
+                <div class="horizontal d-flex">
+                  <div class="horizontal-line me-1"></div>
+                  <div class="fw-bold pt-1" id="newsText">NEWS</div>
+                </div>
+              </h5>
+              <a class="card-text" id="cardtextH1" href="https://www.blueorigin.com/news/ns-25-mission-updates">Blue Origin Debuts New Glenn on Our Launch Pad</a>
+              <p class="card-text" id="cardtextprg">Our New Glenn vehicle successfully rolled out and upended today for the first time on the pad at Launch Complex 36 (LC-36).</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+          <div class="card h-100">
+            <img src="Images/AboutBlue/ns-24_boosterlanding.webp" class="card-img-top img-fluid" alt="Blue Origin Spacecraft Landing">
+            <div class="card-body">
+              <h5 class="card-title">
+                <div class="date badge">DEC 19, 2024</div>
+                <br>
+                <div class="horizontal d-flex">
+                  <div class="horizontal-line me-1"></div>
+                  <div class="fw-bold pt-1" id="newsText" style="color: #0033cc;">NEWS</div>
+                </div>
+              </h5>
+              <a class="card-text" id="cardtextH1" href="https://www.blueorigin.com/news/new-shepard-ns-26-mission">Blue Origin Successfully Completes 24th Mission to Space</a>
+              <p class="card-text" id="cardtextprg">Blue Origin successfully completed its 24th New Shepard flight and 13th payload mission today from Launch Site One in West Texas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="imageNews">
+              <img src="Images/AboutBlue/bluering_newshero.webp" class="card-img-top" alt="Blue Origin Spacecraft Landing">
+            </div>
+              <div class="card-body">
+                  <h5 class="card-title">
+                      <div class="date badge" >OCT 16, 2024</div>
+                      <br>
+                      <div class="horizontal d-flex">
+                        <div class="horizontal-line me-1"></div>
+                        <div class="fw-bold pt-1" id="newsText" style="color: #0033cc;">
+                          NEWS</div>
+                      </div>
+                  </h5>
+                  <a class="card-text" id="cardtextH1" href="https://www.blueorigin.com/news/blue-origin-unveils-space-mobility-platform">Blue Origin Unveils Multi-Mission, Multi-Orbit Space Mobility Platform</a>
+                  <p class="card-text" id="cardtextprg">Expanding upon its mission to build a road to space for the benefit of Earth, Blue Origin has unveiled Blue Ring.</p>
+              </div>
+          </div>
+        </div>
+      
+      <div class="col-md-4">
+        <div class="card">
+            <img src="Images/AboutBlue/230123_solarcell.webp" class="card-img-top" alt="Blue Origin Spacecraft Landing">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <div class="date badge" >JUL 19, 2023</div>
+                    <br>
+                    <div class="horizontal d-flex">
+                      <div class="horizontal-line me-1"></div>
+                      <div class="fw-bold pt-1" id="newsText" style="color: #0033cc;">
+                        NEWS</div>
+                    </div>
+                </h5>
+                <a class="card-text" id="cardtextH1" href="https://www.blueorigin.com/news/blue-origin-awarded-nasa-partnership-to-turn-lunar-regolith-into-solar-power-systems-on-the-moon">Blue Origin Awarded NASA Partnership.</a>
+                <p class="card-text" id="cardtextprg">Breakthrough could lead to autonomous manufacture of unlimited amounts of solar power, power transmission cables.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+            <img src="Images/AboutBlue/webheader_bluemoon.webp" class="card-img-top" alt="Blue Origin Spacecraft Landing">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <div class="date badge" >MAY 19, 2023</div>
+                    <br>
+                    <div class="horizontal d-flex">
+                      <div class="horizontal-line me-1"></div>
+                      <div class="fw-bold pt-1" id="newsText" style="color: #0033cc;">
+                        NEWS</div>
+                    </div>
+                </h5>
+                <a class="card-text" id="cardtextH1" href="https://www.blueorigin.com/news/nasa-selects-blue-origin-for-mission-to-moon">NASA Selects Blue Origin for Astronaut Mission to the Moon</a>
+                <p class="card-text" id="cardtextprg">KENT, WA -- NASA has awarded a NextSTEP-2 Appendix P Sustaining Lunar Development (SLD) contract to Blue Origin.</p>
+            </div>
+        </div>
+      </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+              <div class="imageNews">
+                <img src="Images/AboutBlue/starfield_feather.webp" class="card-img-top" alt="Blue Origin Spacecraft Landing">
+              </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <div class="date badge" >AUG 29, 2024</div>
+                        <br>
+                        <div class="horizontal d-flex">
+                          <div class="horizontal-line me-1"></div>
+                          <div class="fw-bold pt-1" id="newsText" style="color: #0033cc;">
+                            NEWS</div>
+                        </div>
+                    </h5>
+                    <a class="card-text" id="cardtextH1" href="https://www.blueorigin.com/news/ns-23-findings">Blue Origin NS-23 Findings</a>
+                    <p class="card-text" id="cardtextprg">The direct cause of the NS-23 mishap was a thermo-structural failure of the engine nozzle.  </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card">
+              <img src="Images/AboutBlue/orbital-reef-sierra-space-1.webp" class="card-img-top" alt="Blue Origin Spacecraft Landing">
+              <div class="card-body">
+                  <h5 class="card-title">
+                      <div class="date badge" >MAY 19, 2024</div>
+                      <br>
+                      <div class="horizontal d-flex">
+                        <div class="horizontal-line me-1"></div>
+                        <div class="fw-bold pt-1" id="newsText" style="color: #0033cc;">
+                          NEWS</div>
+                      </div>
+                  </h5>
+                  <a class="card-text" id="cardtextH1" href="https://www.blueorigin.com/news/ns-25-mission-updates">Reef Starter Announces Innovation Challenge to Increase Access to Space for Startups</a>
+                  <p class="card-text" id="cardtextprg">Glenn
+                    Orbital Reef’s Reef Starter to Support the Launch of Breakthrough Innovations in Low Earth Orbit</p>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+              <img src="Images/AboutBlue/gs2_lc36.webp" class="card-img-top" alt="Blue Origin Spacecraft Landing">
+              <div class="card-body">
+                  <h5 class="card-title">
+                      <div class="date badge" >AUG 29, 2024</div>
+                      <br>
+                      <div class="horizontal d-flex">
+                        <div class="horizontal-line me-1"></div>
+                        <div class="fw-bold pt-1" id="newsText" style="color: #0033cc;">
+                          NEWS</div>
+                      </div>
+                  </h5>
+                  <a class="card-text" id="cardtextH1" href="https://www.blueorigin.com/news/nasa-awards-mars-science-mission-launch-to-blue-origin-new-glenn">NASA Awards Mars Science Mission Launch to Blue Origin’s New Glenn</a>
+                  <p class="card-text" id="cardtextprg">Today, NASA’s Launch Services Program (LSP) awarded Blue Origin’s New Glenn the Escape and Plasma Acceleration and Dynamics Explorers (ESCAPADE) contract.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="SMPbtn">
+      <button class="ShowMorePost">Show More Post</button>
+    </div>
+  </section>
+  <section class="container-fluid text-center mt-2 pb-5" id="inq">
+    <div class="container mt-2">
+      <div class="text">
+        <h1 style="color: #0033cc;">Press Inquiries</h1>
+      </div>
+      <div class="InquiriesBtn">
+        <a href="Inquery.html">
+          <button class="BtnInquiries">Submit your Inquery</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Back To TOP -->
+  <button id="backToTop" class="btn btn-primary rounded-circle">
+    <i class="fa-solid fa-angle-up fa-xl" style="color: #ffffff;"></i>
+</button>
+  <footer>
+    <!-- Social Media Section -->
+    <section class="bg-brand text-white py-5 d-flex justify-content-center">
+      <div class="container text-center d-flex justify-content-center">
+        <h3>Follow Blue Origin &nbsp; | &nbsp;</h3>
+        <ul class="list-unstyled d-flex justify-content-center">
+          <li class="mx-2 socials">
+            <a href="https://twitter.com/blueorigin" class="text-white" aria-label="Twitter">
+              <!-- Twitter Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="35" viewBox="0 0 50 50">
+                <path
+                  d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z">
+                </path>
+              </svg>
+            </a>
+          </li>
+          <li class="mx-2 socials">
+            <a href="https://www.instagram.com/blueorigin/" class="text-white" aria-label="Instagram">
+              <!-- Instagram Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="35" viewBox="0 0 48 48">
+                <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#fd5"></stop>
+                  <stop offset=".328" stop-color="#ff543f"></stop>
+                  <stop offset=".348" stop-color="#fc5245"></stop>
+                  <stop offset=".504" stop-color="#e64771"></stop>
+                  <stop offset=".643" stop-color="#d53e91"></stop>
+                  <stop offset=".761" stop-color="#cc39a4"></stop>
+                  <stop offset=".841" stop-color="#c837ab"></stop>
+                </radialGradient>
+                <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                  d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                </path>
+                <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813"
+                  gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#4168c9"></stop>
+                  <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                </radialGradient>
+                <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                  d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                </path>
+                <path fill="#fff"
+                  d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                </path>
+                <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                <path fill="#fff"
+                  d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                </path>
+              </svg>
+            </a>
+          </li>
+          <li class="mx-2  socials">
+            <a href="https://www.youtube.com/@blueorigin" class="text-white" aria-label="YouTube">
+              <!-- YouTube Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="35" viewBox="0 0 48 48">
+                <path fill="#FF3D00"
+                  d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z">
+                </path>
+                <path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="mx-2  socials">
+            <a href="https://www.linkedin.com/company/blue-origin" class="text-white" aria-label="LinkedIn">
+              <!-- LinkedIn Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="35" viewBox="0 0 24 24">
+                <path
+                  d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z">
+                </path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Legal and Navigation Section -->
+    <section class="bg-gray950 text-gray100 py-5 d-flex justify-content-center" style="background-color: #000;">
+      <div class="container" id="footer">
+        <div class="row w-100">
+          <!-- Logo and Copyright -->
+          <div class="col-md-4 mb-3" id="first_ft1">
+            <a href="index.html"><img src="https://d1o72l87sylvqg.cloudfront.net/blue-origin/logo-feather-optimized.svg"
+                alt="Blue Origin Home" class="img-fluid" id="footerImage"></a>
+            <p>© 2024 Blue Origin LLC</p>
+            <nav aria-label="Legal" id="legal">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-gray100">Privacy Policy</a></li>
+                <li><a href="#" class="text-gray100">Terms of Use</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Footer Navigation -->
+          <div class="col-md-4 mb-3" id="first_ft2">
+            <nav aria-label="Footer" id="line">
+              <ul class="list-unstyled">
+                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Careers</a></li>
+                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Gallery</a></li>
+                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Become an Astronaut</a></li>
+                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Become a Supplier</a></li>
+                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Media Inquiries</a></li>
+                <li class="pb-4"><a href="#" class="text-gray100 text-decoration-none">Accessibility</a></li>
+                <li><a href="#" class="text-gray100 text-decoration-none">Cookie Setting</a></li>
+              </ul>
+              <label class="mt-3 d-block" id="first_ft3" style="background-color: #000;">
+                Font Preference
+                <select id="andromeda-font-preference" class="form-select mt-2">
+                  <option value="no-preference" selected>No Preference (Default)</option>
+                  <option value="atkinson-hyperlegible">Atkinson Hyperlegible</option>
+                  <option value="open-dyslexic">OpenDyslexic</option>
+                </select>
+              </label>
+            </nav>
+          </div>
+
+          <!-- Subscription Form -->
+          <div class="col-md-4 mb-3  first_ft4">
+            <h2>Subscribe</h2>
+            <form
+              action="https://blueorigin.us9.list-manage.com/subscribe/post?u=ca4c14684ac1af3f1219b4382&amp;id=561fc27e50"
+              method="POST" target="_blank">
+              <p>Sign up to receive updates on Blue Origin's announcements, launches, and opportunities.</p>
+              <p><abbr title="(required)">* </abbr> indicates a required field</p>
+              <div class="mb-3">
+                <label for="email">Email<abbr title="(required)"> *</abbr></label>
+                <input type="email" class="form-control" id="email" name="EMAIL" required>
+              </div>
+              <div class="mb-3">
+                <input type="checkbox" id="consent" required>
+                <label for="consent">Please click to confirm your consent to receive email updates from us. Note - you
+                  have the right to withdraw your consent at any time by contacting us at <a
+                    href="mailto:privacy@blueorigin.com">privacy@blueorigin.com</a> or by clicking the “unsubscribe”
+                  link in the emails we send to you. Please review our <a href="/privacy-policy" target="_blank"
+                    rel="noopener">privacy policy</a>.</label>
+              </div>
+              <button type="submit" class="btn btn-brand w-75">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- Bootstrap js -->
+  <script src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Alpine.js -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <!-- Animate on scroll -->
+  <script src="aos-master/dist/aos.js"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- About Blue JavaScript -->
+  <script src="JS/AboutBlue/AboutBlue.js"></script>
+  <script src="JS/BacktoTop.js"></script>
+</body>
+
+</html>

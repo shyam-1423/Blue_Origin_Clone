@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --color-brand: #0033cc;
+  /* Brand color */
+  --color-white: #ffffff;
+  /* White color */
+  --color-highlight: #ececec;
+  /* Highlight color for hover */
+  --font-size: 1rem;
+  /* Default font size */
+}
+
+.Header {
+  background-color: transparent;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+}
+
+.HeaderLogo {
+  flex: 1;
+  /* Pushes navigation to the right */
+}
+
+.HeaderLogo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.HeaderNavigation {
+  margin-left: auto;
+}
+
+.HeaderNavigationList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+/* Header Navigation Styling */
+.HeaderNavigation {
+  background-color: transparent;
+  /*Background color for the navigation */
+  padding: 1rem;
+}
+
+.HeaderNavigationList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -40%;
+  z-index: 1000;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+#AboutDropdown,
+#VehichleDropdown {
+  height: 170px;
+  background-color: #0033cc;
+  width: 150px;
+  border-radius: 0;
+  border: none;
+  padding: 10px;
+}
+
+#LanguageDropdown {
+  height: 310px;
+  background-color: #0033cc;
+  width: 150px;
+  border-radius: 0;
+  border: none;
+  padding: 0px;
+  padding-top: 10px;
+}
+
+#AboutDropdown #dropdown_Item {
+  font-size: 18px;
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+}
+
+#VehichleDropdown #dropdown_Item {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+#LanguageDropdown #dropdown_Item {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.dropdown-item {
+  position: relative;
+  /* Required for positioning pseudo-elements */
+  text-decoration: none;
+  /* Remove default underline */
+  padding-bottom: 5px;
+  /* Space for underline */
+  color: #fff;
+}
+
+/* underline hover  */
+.dropdown-item:hover {
+  background-color: #8c9fc400;
+}
+
+.dropdown-item::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 20;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  /* Thickness of the underline */
+  background-color: currentColor;
+  /* Color of the underline, inherits from text color */
+  transition: width 0.3s ease;
+  /* Smooth transition for underline */
+}
+
+/* Show underline on hover */
+.dropdown-item:hover::after {
+  width: 100%;
+  /* Underline width on hover */
+}
+
+/* Default link styling */
+.nav-link {
+  position: relative;
+  /* Ensure the pseudo-element is positioned correctly */
+  display: inline-block;
+  /* Make sure it supports width and height */
+  padding-bottom: 2px;
+  /* Space for the underline */
+  text-decoration: none;
+  /* Remove default underline */
+  color: #fff;
+  /* Use the inherited text color */
+  font-size: 18px;
+  box-sizing: border-box;
+  /* Include padding and borders in the element's width and height */
+}
+
+.nav-link:hover {
+  color: var(--color-highlight);
+  /* Change font color on hover */
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  /* Thickness of the underline */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-highlight);
+  /* Underline color */
+  transform: scaleX(0);
+  /* Hide underline initially */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  /* Ensure the underline appears above other content */
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  /* Show underline on hover */
+  transform-origin: bottom left;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  background-color: var(--color-white);
+  /* Background color for dropdown */
+}
+
+.dropdown-item {
+  /* color: var(--color-brand); Font color for dropdown items */
+  text-decoration: none;
+  /* Remove underline from dropdown items */
+}
+
+.btn-primary {
+  background-color: #0033cc;
+  border: none;
+  margin-left: 25px;
+}
+
+.offcanvas {
+  background-color: #2c2c2c;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path stroke="currentColor" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/></svg>');
+}
+
+/* Fly To Space button styling */
+#FLT_btn {
+  display: inline-block;
+  margin-left: auto;
+  /* Push button to the right if needed */
+  color: #fff;
+  background-color: #0033cc;
+  padding: 0.5rem 1rem;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+/* styles.css */
+#FLT_btn {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0033cc;
+  padding: 0.5rem 1rem;
+  padding-left: 15px;
+  font-size: 1.25rem;
+  /* fs-5 equivalent */
+}
+
+#FLT_btn::before,
+#FLT_btn::after {
+  content: '';
+  position: absolute;
+  top: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  /* Thickness of the underline */
+  background-color: #ffffff;
+  /* Underline color */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+#FLT_btn::before {
+  transform-origin: bottom left;
+}
+
+#FLT_btn:hover::before,
+#FLT_btn:hover::after {
+  transform: scaleX(1);
+}
+
+/* Hamburger manu */
+.container {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2 {
+  width: 35px;
+  height: 6px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/* Close button */
+.close-icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.line-1 {
+  transform: rotate(45deg);
+}
+
+.line-2 {
+  transform: rotate(-45deg);
+}
+
+.close-icon:hover .line-1,
+.close-icon:hover .line-2 {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Responsive NAvigation */
+@media (max-width: 768px) {
+  #HeaderNavigationList {
+    display: none;
+  }
+
+  .offcanvas {
+    width: 100%;
+    background-color: #2d2d2e;
+  }
+
+  .HeaderCallToActionLinkFloating {
+    position: fixed;
+  }
+}
+
+@media (max-width: 991px) {
+  #HeaderNavigationList {
+    display: none;
+  }
+
+  .offcanvas {
+    width: 100%;
+    background-color: #2d2d2e;
+  }
+
+  .HeaderCallToActionLinkFloating {
+    position: fixed;
+  }
+}
+
+#first_section {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../Images/Engines/blueorigin_be4_test_headerdark.jpg);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+}
+
+#first_section_content {
+  /* height: 86.8vh; */
+  padding: 5%;
+}
+
+.horizontal-line {
+  width: 20px;
+  /* Full width of the container */
+  height: 4px;
+  /* Thickness of the line */
+  background-color: #0033cc;
+  /* Color of the line */
+  margin: 20px 0;
+  /* Spacing above and below the line */
+}
+
+#first_section_content_text {
+  padding-left: 5%;
+}
+
+#first_section_content_text1,
+#first_section_content_text2 {
+  padding-left: 5%;
+}
+
+#first_section_content_text1 span {
+  font-size: 50px !important;
+}
+
+#first_section_content_text2 span {
+  font-size: 20px !important;
+}
+
+@media (max-width: 350px) {
+  #first_section_content_text1 span {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #first_section_content_text1 span {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  #first_section_content_text1 span {
+    font-size: 40px !important;
+  }
+}
+
+/* Video  */
+.hero-content__main {
+  margin-top: 20px;
+  padding-left: 6%;
+}
+
+.video-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.video-btn-play-bg {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.play-btn-svg {
+  width: 50px;
+  height: 50px;
+  fill: #000000;
+}
+
+.video-btn-text {
+  margin-left: 25px;
+  padding-top: 10px;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#videoModal {
+  height: 100%;
+  width: 100%;
+  background-color: #0000002d;
+}
+
+.modal-content {
+  width: 100%;
+  background-color: #00000038;
+  color: #fff;
+}
+
+#second_section {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_section_content {
+  width: 80%;
+  background-color: #fff;
+}
+
+#second_section_content_text1 h1 {
+  color: #0033cc;
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-weight: 400;
+}
+
+#second_section_content_text2,
+#second_section_content_text3 {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#second_section_content_text2 p,
+#second_section_content_text3 p {
+  width: 85%;
+  font-size: 20px;
+  font-weight: 400 !important;
+}
+
+@media (max-width: 350px) {
+
+  #second_section_content_text2 p,
+  #second_section_content_text3 p {
+    font-size: 17px;
+    text-wrap: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #second_section_content_text2 p,
+  #second_section_content_text3 p {
+    font-size: 14px;
+    text-wrap: none;
+  }
+}
+
+@media (max-width: 991px) {
+
+  #second_section_content_text2 p,
+  #second_section_content_text3 p {
+    font-size: 18px;
+    text-wrap: none;
+  }
+}
+
+@media (max-width: 1224px) {
+
+  #second_section_content_text2 p,
+  #second_section_content_text3 p {
+    font-size: 19px;
+    text-wrap: none;
+  }
+}
+
+#third_section_content_BE-3_text1 {
+  padding-left: 10%;
+}
+
+#third_section_content_BE-3_btn {
+  padding-top: 20px;
+}
+
+/* Ensure your CSS is loaded properly in your HTML file. */
+/* You can place this CSS in a <style> block in the <head> section of your HTML or in a separate CSS file. */
+
+/* Initial link style */
+#third_section_content_BE-3_btn1 {
+  color: #f8f9fa;
+  /* Light color for the text */
+  font-size: 16px;
+  /* Default font size */
+  padding: 8px 16px;
+  /* Padding around the text */
+  border: 2px solid transparent;
+  /* Transparent border for smooth transition */
+  background-color: #0033cc;
+  /* Initial background color (dark grey) */
+  position: relative;
+  /* Positioning for the border effect */
+  text-decoration: none;
+  /* Ensure there's no underline by default */
+  display: inline-flex;
+  /* Ensures the link behaves like a block-level element with inline behavior */
+  align-items: center;
+  /* Vertically center the text */
+  overflow: hidden;
+  /* Hide overflow to keep the border effect within bounds */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  /* Smooth transitions */
+}
+
+/* Slide-in border effect */
+#third_section_content_BE-3_btn1::before {
+  content: '';
+  /* Empty content for the pseudo-element */
+  position: absolute;
+  /* Positioning relative to the button */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffffff;
+  /* Border color */
+  transition: all 0.4s ease;
+  /* Smooth transition for the border effect */
+  transform: scaleX(0) scaleY(0);
+  /* Start with scale 0 */
+  transform-origin: center;
+  /* Scale effect originates from the center */
+  z-index: 0;
+  /* Place behind the text */
+}
+
+/* Hover effect */
+#third_section_content_BE-3_btn1:hover {
+  color: #ffffff;
+  /* Change text color on hover */
+  background-color: #184ae2;
+  /* Change background color on hover */
+  transform: translateY(-2px);
+  /* Slightly elevate the button on hover */
+}
+
+/* Pseudo-element on hover */
+#third_section_content_BE-3_btn1:hover::before {
+  transform: scaleX(1) scaleY(1);
+  /* Scale the border effect to full size */
+}
+
+/* Ensure text appears above the pseudo-element */
+#third_section_content_BE-3_btn1 span {
+  position: relative;
+  /* Position text above the pseudo-element */
+  z-index: 1;
+  /* Ensure text is above the border animation */
+}
+
+#fourth_section {
+  padding-bottom: 5%;
+}
+
+#fourth_section_content_text h1 {
+  color: #0033cc;
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-weight: 400;
+}
+
+#fourth_section_content_part1,
+#fourth_section_content_part2,
+#fourth_section_content_part3 {
+  padding-top: 15px;
+}
+
+#fourth_section_content_part1 h1,
+#fourth_section_content_part2 h1,
+#fourth_section_content_part3 h1 {
+  color: #0033cc;
+}
+
+#fourth_section_content_part1_sub1 h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+#fourth_section_content_part1_sub2 h3,
+#fourth_section_content_part1_sub3 h3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .order-2 {
+    order: 1 !important;
+    /* Text comes first on mobile */
+  }
+
+  .order-3 {
+    order: 2 !important;
+    /* Image comes second on mobile */
+  }
+}
+
+@media (min-width: 768px) {
+  .order-md-1 {
+    order: 1 !important;
+    /* Image comes first on medium and larger screens */
+  }
+
+  .order-md-2 {
+    order: 2 !important;
+    /* Text comes second on medium and larger screens */
+  }
+}

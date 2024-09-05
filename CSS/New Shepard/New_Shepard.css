@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero-wrapper--white-focus {
+    background-color: #ffffff;
+}
+
+.hero--background-fit-cover {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#background-video{
+    height: 100vh;
+    width: 100%;
+}
+.full-height {
+    height: 100vh;
+    width: 100%;
+}
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.adj-img {
+    width: 100%;
+    height: auto;
+}
+
+.kicker {
+    font-weight: bold;
+    color: #666;
+}
+
+.big-white-border {
+    border-top: 4px solid #fff;
+}
+
+.vessel {
+    padding: 3rem 1rem;
+    background-color: #f8f9fa;
+}
+
+.vessel-image-wrapper {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.two-col-wrapper {
+    padding: 4rem 0;
+}
+
+.tc-text-inner,
+.tc-image-inner {
+    padding: 1rem;
+}
+
+@media (max-width: 767.98px) {
+    .full-height {
+        height: auto;
+    }
+
+    .tc-image-inner {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__content {
+    width: 80%;
+    max-width: 800px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.modal__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
